@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <title>BMI Calculator by James</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>BMI CALCULATOR</h3>
+            <p>By James Lagbeneku</p>
+        </div>
+
+        <form class="myForm" action="">
+            <div class="weight">
+                <label for="weight-input">Enter Your Weight In LBS</label>
+                <input type="number" min="0" id="weight-input" placeholder="WEIGHT" required>
+            </div>
+            <div class="height">
+                <label id="height-label" for="height-input">Enter Your Height In LBS</label>
+                <input type="number" placeholder="FT" min="1" max="11" id="height-feet-input" required><input type="number" placeholder="IN" min="1" max="11" id="height-inches-input" required>
+            </div>
+            <div class="btns">
+                <button class="submit-btn" type="submit">CALCULATE</button> 
+                <button class="reset-btn" type="reset">RESET</button>
+            </div>
+            
+        </form>
+        
+        <div class="result">
+            <h3>Your BMI is <span class="BMI-figure"></span> and you are <span class="body-structure"></span></h3>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+</html>
